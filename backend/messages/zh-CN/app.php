@@ -106,6 +106,12 @@ return [
     'Your Followers' => '我的粉丝',
 
     
+ 
+    'Forum Description' => '论坛描述',
+    'Forum Url' => '论坛网址',
+    'Forum Icon' => '论坛图标',
+    'Information' => '信息',
+ 
     'Board' => '版块',
     'Board Name' => '版块名称',
     'Board Description' => '版块描述',
