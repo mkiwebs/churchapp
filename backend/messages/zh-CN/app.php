@@ -105,15 +105,7 @@ return [
     'You\'re Following' => '我的关注',
     'Your Followers' => '我的粉丝',
 
-    'Forum' => '论坛',
-    'Forums' => '论坛',
-    'My forums' => '我的论坛',
-    'Create Forum' => '创建论坛',
-    'Forum Name' => '论坛名称',
-    'Forum Description' => '论坛描述',
-    'Forum Url' => '论坛网址',
-    'Forum Icon' => '论坛图标',
-    'Information' => '信息',
+    
     'Board' => '版块',
     'Board Name' => '版块名称',
     'Board Description' => '版块描述',
