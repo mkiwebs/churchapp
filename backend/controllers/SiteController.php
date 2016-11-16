@@ -60,6 +60,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = 'dashboard';
         return $this->render('index');
     }
 
@@ -69,7 +70,9 @@ class SiteController extends Controller
      * @return string
      */
     public function actionLogin()
+
     {
+        $this->layout = 'login-page';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -93,6 +96,8 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
 
+
         return $this->goHome();
+         
     }
 }

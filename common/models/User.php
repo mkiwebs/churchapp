@@ -48,6 +48,24 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * @inheritdoc
      */
+        /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => Yii::t('backend', 'ID'),
+            'username' => Yii::t('backend', 'Username'),
+            'auth_key' => Yii::t('backend', 'Auth Key'),
+            'password_hash' => Yii::t('backend', 'Password Hash'),
+            'password_reset_token' => Yii::t('backend', 'Password Reset Token'),
+            'email' => Yii::t('backend', 'Email'),
+            'status' => Yii::t('backend', 'Status'),
+            'created_at' => Yii::t('backend', 'Created At'),
+            'updated_at' => Yii::t('backend', 'Updated At'),
+        ];
+    }
+
     public function rules()
     {
         return [

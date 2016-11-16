@@ -11,12 +11,37 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    
+
+    //Defined in the common/main.php
+/*    'name'=>'Churchapp',
+    'aliases'=>[
+
+        '@customIcons'=>'@backend/web/uploads/customIcons/',
+        '@profilePics'=>'@backend/web/uploads/profilePics/',
+        '@videos'=>'@backend/web/uploads/videos/',
+        '@fileDocs'=>'@backend/web/uploads/fileDocs/',
+    ],*/
+//set source language to english
+    //'sourceLanguage'=>'en-US',
 
     'modules' => [],
 
     'components' => [
 
+/*        'i18n' => [
+        'translations' => [
+            'app*' => [
+                'class' => 'yii\i18n\PhpMessageSource',
+                'basePath' => '@app/zh-CN/messages',
+                'sourceLanguage' => 'en-US',
+                'fileMap' => [
+                    'app' => 'app.php',
+                    'app/error' => 'error.php',
+                ],
+            ],
+        ],
+    ],
+*/
         'view'=>[
             'theme'=>[
             'pathMap'=>[
@@ -47,7 +72,14 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-       
+        /*
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+            ],
+        ],
+        */
     ],
     'params' => $params,
 ];
