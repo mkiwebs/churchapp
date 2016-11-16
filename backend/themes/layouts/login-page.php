@@ -30,13 +30,21 @@ LoginAsset::register($this);
 
         <?= $content ?>
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 60dd1fa5438160ec8cf17eef1f220b115c17de64
     </div>
 </div>
 
 <footer class="footer">
     <div class="container">
+<<<<<<< HEAD
         <p class="align-center">&copy; Emannuel Church  2013 - <?= date('Y') ?></p>
+=======
+        <p class="pull-left">&copy; Emannuel Church  2013 - <?= date('Y') ?></p>
+>>>>>>> 60dd1fa5438160ec8cf17eef1f220b115c17de64
 
     </div>
 </footer>
