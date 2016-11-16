@@ -105,8 +105,7 @@ return [
     'You\'re Following' => '我的关注',
     'Your Followers' => '我的粉丝',
 
-    
- 
+
     'Forum Description' => '论坛描述',
     'Forum Url' => '论坛网址',
     'Forum Icon' => '论坛图标',
