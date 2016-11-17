@@ -69,10 +69,10 @@ $this->title = 'Dashboard';
       </div>
 
       <div class="row">
-
+        
           <!-- Custom Tabs (Pulled to the right) -->
           <div class="nav-tabs-custom">
-            <ul class="nav nav-tabs pull-left">
+            <ul class="nav nav-tabs pull-right">
               <li class="active"><a href="#tab_1-1" data-toggle="tab">Workers</a></li>
               <li><a href="#tab_2-2" data-toggle="tab">New Disciples</a></li>
               <li><a href="#tab_3-2" data-toggle="tab">Camp</a></li>
@@ -97,7 +97,7 @@ $this->title = 'Dashboard';
             <div class="col-xs-2">
              <!-- Date range -->
               <div class="form-group">
-
+                
                 <div class="input-group"><span>From</span>
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
@@ -108,7 +108,7 @@ $this->title = 'Dashboard';
               </div>
               <!-- /.form group -->
             </div>
-
+             
             <div class="col-xs-2">
              <!-- Date range -->
               <div class="form-group">
@@ -119,7 +119,7 @@ $this->title = 'Dashboard';
                     <i class="fa fa-calendar"></i>
                   </div>
                   <input type="text" class="form-control pull-right" id="reservation">
-                </div>
+                </div> 
                 <!-- /.input group -->
               </div>
               <!-- /.form group -->
@@ -179,7 +179,7 @@ $this->title = 'Dashboard';
                     noyaxis: true,
                     labels:['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
                     colors: [
-                    '#DD4B39',
+                    '#DD4B39', 
                     '#00A65A',
                      '#F39C12'
                      ],
@@ -229,7 +229,7 @@ $this->title = 'Dashboard';
                     noyaxis: true,
                     labels:['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
                     colors: [
-                    '#DD4B39',
+                    '#DD4B39', 
                     '#00A65A',
                      '#F39C12'
                      ],
