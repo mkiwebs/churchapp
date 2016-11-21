@@ -23,6 +23,7 @@ class DashboardAsset extends AssetBundle
     'adminlte/plugins/daterangepicker/daterangepicker.css',
       'adminlte/plugins/datepicker/datepicker3.css',
       'adminlte/plugins/select2/select2.min.css',
+      'adminlte/plugins/morris/morris.css',
     ];
     public $js = [   
      'adminlte/bootstrap/js/bootstrap.min.js',
@@ -38,7 +39,9 @@ class DashboardAsset extends AssetBundle
     'adminlte/plugins/input-mask/jquery.inputmask.date.extensions.js',
     'adminlte/plugins/input-mask/jquery.inputmask.extensions.js',
     'adminlte/plugins/input-mask/jquery.inputmask.js',
-      'adminlte/dist/js/app.min.js',
+    'adminlte/dist/js/app.min.js',
+    'adminlte/plugins/fastclick/fastclick.js',
+    'adminlte/plugins/morris/morris.min.js',
 
       //'RGraph/libraries/RGraph.common.core.js',
       //'RGraph/libraries/RGraph.bar.js',

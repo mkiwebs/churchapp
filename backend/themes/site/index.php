@@ -68,32 +68,46 @@ $this->title = 'Dashboard';
         <!-- ./col -->
       </div>
 
-      <div class="row">
+ <div class="row">
         
           <!-- Custom Tabs (Pulled to the right) -->
-          <div class="nav-tabs-custom">
-            <ul class="nav nav-tabs pull-right">
-              <li class="active"><a href="#tab_1-1" data-toggle="tab">Workers</a></li>
-              <li><a href="#tab_2-2" data-toggle="tab">New Disciples</a></li>
-              <li><a href="#tab_3-2" data-toggle="tab">Camp</a></li>
-              <li><a href="#tab_4-2" data-toggle="tab">300 Disciples</a></li>
-            </ul>
+  <div class="nav-tabs-custom">
+    <ul class="nav nav-tabs pull-right">
+      <li class="active"><a href="#tab_1-1" data-toggle="tab">Workers</a></li>
+      <li><a href="#tab_2-2" data-toggle="tab">New Disciples</a></li>
+      <li><a href="#tab_3-2" data-toggle="tab">Camp</a></li>
+      <li><a href="#tab_4-2" data-toggle="tab">300 Disciples</a></li>
+    </ul>
 
             <div class="tab-content">
-            <div class="tab-pane active" id="tab_1-1">
 
+            <div class="tab-pane active" id="tab_1-1">
             <div class="box box-primary">
             <div class="box-header">
-                    <!--  TITLE -->
-                    <b>How to use:</b>
-                    <!-- BREADCRUMB -->
-                     <div class="breadcrumb">
+                    <!-- BREADCRUMB -->                  
+                    <div class="col-xs-4">
+                      <div class="breadcrumb">
                         <p>A > B</p>
-                     </div>
-              <h3 class="box-title">Total</h3>
-            </div>
-            <div class="box-body">
 
+                      </div>
+                    </div>
+ 
+                                <!-- Custom Tabs -->
+  <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab_1" data-toggle="tab">总人数</a></li>
+              <li><a href="#tab_2" data-toggle="tab">地教会</a></li>
+              <li><a href="#tab_3" data-toggle="tab">专门别</a></li>
+              <li><a href="#tab_2" data-toggle="tab">地教会</a></li>
+              <li><a href="#tab_3" data-toggle="tab">大学</a></li>
+              <li><a href="#tab_3" data-toggle="tab">青少年</a></li>
+              <li><a href="#tab_2" data-toggle="tab">主日学</a></li>
+              <li><a href="#tab_3" data-toggle="tab">幼儿园</a></li>
+              
+            </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab_1">
+                 
             <div class="col-xs-2">
              <!-- Date range -->
               <div class="form-group">
@@ -129,82 +143,91 @@ $this->title = 'Dashboard';
              <button class="btn btn-primary">Search</button>
             </div>
 
-        <div class="col-xs-2 col-sm-2 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Sunday Service</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-                 <!-- /.col -->
-        <div class="col-xs col-sm-2 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Midweek</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-
-        <div class="col-xs col-sm-2 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">New Disciples</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <div class="row">
+        <button type="button" class="btn btn-danger btn-flat margin">Sunday Service</button>               
+        <button type="button" class="btn btn-success btn-flat margin">Midweek</button>
+        <button type="button" class="btn btn-warning btn-flat margin">New Believers</button>
+          <div class="row">
                <canvas id="cvs" width="1200" height="400"></canvas>
 
-    <script>
-        window.onload = function ()
-        {
-            var bar = new RGraph.Bar({
-                id: 'cvs',
-                data: [[3,4,6],[2,5,3],[1,5,2],[1,4,6],[1,6,8],[3,4,6],[2,5,3],[1,5,2],[1,4,6],[1,6,8],[1,4,6],[1,6,8]],
-                options: {
-                    backgroundGridVlines: false,
-                    backgroundGridBorder: false,
-                    noyaxis: true,
-                    labels:['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
-                    colors: [
-                    '#DD4B39', 
-                    '#00A65A',
-                     '#F39C12'
-                     ],
-                    hmargin: 15,
-                    strokestyle: 'white',
-                    linewidth: 1,
-                    shadowColor: '#ccc',
-                    shadowOffsetx: 0,
-                    shadowOffsety: 0,
-                    shadowBlur: 10,
-                    scaleZerostart: true,
-                    textAccessible: true
-                }
-            }).wave({frames:30})
-        };
-    </script>
+                  <script>
+                      window.onload = function ()
+                      {
+                          var bar = new RGraph.Bar({
+                              id: 'cvs',
+                              data: [[3,4,6],[2,5,3],[1,5,2],[1,4,6],[1,6,8],[3,4,6],[2,5,3],[1,5,2],[1,4,6],[1,6,8],[1,4,6],[1,6,8]],
+                              options: {
+                                  backgroundGridVlines: false,
+                                  backgroundGridBorder: false,
+                                  noyaxis: true,
+                                  labels:['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+                                  colors: [
+                                  '#DD4B39', 
+                                  '#00A65A',
+                                   '#F39C12'
+                                   ],
+                                  hmargin: 15,
+                                  strokestyle: 'white',
+                                  linewidth: 1,
+                                  shadowColor: '#ccc',
+                                  shadowOffsetx: 0,
+                                  shadowOffsety: 0,
+                                  shadowBlur: 10,
+                                  scaleZerostart: true,
+                                  textAccessible: true
+                              }
+                          }) .wave({frames:30});
+   };
+                  </script>
+             </div> <!-- The graph ends here -->
+              </div> <!-- End of tab_1 -->
 
-
-        </div>
-
-          </div></div>
-   </div><!-- tab_1-1 -->
+              <div class="tab-pane" id="tab_2">
+                The languages are members of the same family. Their separate existence is a myth.
+                For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                new common language would be desirable: one could refuse to pay expensive translators. To
+                achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                words. If several languages coalesce, the grammar of the resulting language is more simple
+                and regular than that of the individual languages.
+              </div>
               <!-- /.tab-pane -->
-              <div class="tab-pane" id="tab_2-2">
-                The European languages are members of the same family. Their separate existence is a myth.
+              <div class="tab-pane" id="tab_3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.
+              </div>
+              <!-- /.tab-pane -->
+            </div><!-- /.tab-content --> 
+        
+          </div><!-- nav-tabs-custom -->
+
+
+               </div>
+              </div><!--box-primary-->
+             </div><!-- /.tab-pane 1_1 --> 
+
+
+
+            <div class="tab-pane" id="tab_2-2">
+                        <!-- BAR CHART -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">New Disciples</h3>
+  
+            </div>
+            <div class="box-body chart-responsive">
+              <canvas id="csv1" width="1000" height="400"></canvas>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+                
+
+                The European  are members of the same family. Their separate existence is a myth.
                 For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
                 in their grammar, their pronunciation and their most common words. Everyone realizes why a
                 new common language would be desirable: one could refuse to pay expensive translators. To
@@ -214,55 +237,19 @@ $this->title = 'Dashboard';
               </div>
               <!-- /.tab-pane -->
               <div class="tab-pane" id="tab_3-2">
-                        <div class="row">
-               <canvas id="cvs" width="1200" height="400"></canvas>
-
-    <script>
-        window.onload = function ()
-        {
-            var bar = new RGraph.Bar({
-                id: 'cvs',
-                data: [[3,4,6],[2,5,3],[1,5,2],[1,4,6],[1,6,8],[3,4,6],[2,5,3],[1,5,2],[1,4,6],[1,6,8],[1,4,6],[1,6,8]],
-                options: {
-                    backgroundGridVlines: false,
-                    backgroundGridBorder: false,
-                    noyaxis: true,
-                    labels:['Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
-                    colors: [
-                    '#DD4B39', 
-                    '#00A65A',
-                     '#F39C12'
-                     ],
-                    hmargin: 15,
-                    strokestyle: 'white',
-                    linewidth: 1,
-                    shadowColor: '#ccc',
-                    shadowOffsetx: 0,
-                    shadowOffsety: 0,
-                    shadowBlur: 10,
-                    scaleZerostart: true,
-                    textAccessible: true
-                }
-            }).wave({frames:30})
-        };
-    </script>
-
-
-        </div>
-              </div>
-               <!-- /.tab-pane -->
-              <div class="tab-pane" id="tab_4-2">
-                TAB 42 is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 It has survived not only five centuries, but also the leap into electronic typesetting,
                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
                 sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
                 like Aldus PageMaker including versions of Lorem Ipsum.
-              </div>
-              <!-- /.tab-pane -->
-            </div>
-            <!-- /.tab-content -->
+              </div> 
+
+
+
+
+            </div><!-- /.tab-content -->           
           </div>
           <!-- nav-tabs-custom -->
         </div>
@@ -270,7 +257,7 @@ $this->title = 'Dashboard';
 </pre>
 <script src="RGraph/libraries/RGraph.common.core.js"></script>
 <script src="RGraph/libraries/RGraph.bar.js"></script>
-<script>
+<script>            
   $(function () {
     //Initialize Select2 Elements
     $(".select2").select2();

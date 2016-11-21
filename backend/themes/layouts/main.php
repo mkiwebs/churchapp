@@ -27,11 +27,13 @@ DashboardAsset::register($this);
 <div class="wrapper">
       <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+
+
+    <a href="index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>R</b>T</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>Rem</b>nant</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -44,7 +46,6 @@ DashboardAsset::register($this);
         <ul class="nav navbar-nav">
         
           <!-- Messages: style can be found in dropdown.less-->
-
 
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -108,8 +109,12 @@ DashboardAsset::register($this);
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <a href="index.php">
+            <i class="fa fa-dashboard"></i>
+            <span>Dashboard </span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
         </li>
 
@@ -118,30 +123,33 @@ DashboardAsset::register($this);
             <i class="fa fa-bar-chart"></i>
             <span>Statistics</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
 
-            <li><?= Html::a(' General', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Deacons', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Community', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Training', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Local Church', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' University', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' RT Mission', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Business Mission', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
 
         <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-plus"></i> <span>Church Info</span>
+           <a href="#">
+            <i class="fa fa-cogs"></i>
+            <span>Church Info</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
-          </a>
+            </a>
           <ul class="treeview-menu">
-            <li><?= Html::a(' General', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Deacons', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Community', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Training', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' General', ['/church/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Officials', ['/officials/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Deacons', ['/deacons/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Community', ['/community/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Training', ['/training/index'], ['class' => 'fa fa-circle-o']) ?></li>
+             <li><?= Html::a(' Property', ['/property/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
 
@@ -154,9 +162,9 @@ DashboardAsset::register($this);
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Language</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i>Modules</a></li>
-            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Components</a></li>
+            <li><?= Html::a(' Language', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Modules', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Components', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
         <li class="treeview">
@@ -168,10 +176,11 @@ DashboardAsset::register($this);
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Deacons</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Community</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> New Disciples</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Experts</a></li>
+            <li><?= Html::a(' Disciples', ['/disciple/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Deacons', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Community', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' New Disciples', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Experts', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
 
@@ -181,17 +190,17 @@ DashboardAsset::register($this);
     </section>
     <!-- /.sidebar -->
   </aside>
-
     <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <p class="lead">
         Dashboard
         <small><?php echo date("Y/ m /j");?></small>
-      </p>
+      
          <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+            //'class'=>'btn btn-flat btn-primary',
+        ]) ?></p>
         <?= Alert::widget() ?>
     </section>
     <section class="content">
