@@ -74,7 +74,7 @@ return [
     'Blog' => '日志',
     'Photo' => '照片',
     'Photos' => '照片',
-    'Music' => '音乐',
+     
     'Video' => '视频',
     'Album' => '相册',
     'Albums' => '相册',
