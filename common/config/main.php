@@ -2,11 +2,11 @@
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     //set target language to chinese
-    // 'language'=>'zh-CN',
-    'language'=>'en', // back to English
+     'language'=>'zh-CN',
+    //'language'=>'en', // back to English
 
-     'name'=>'Churchapp',
-      'timeZone'=>'Asia/Shanghai',
+    'name'=>'Churchapp',
+    'timeZone'=>'Asia/Shanghai',
     'aliases'=>[
 
         '@customIcons'=>'@backend/web/uploads/customIcons/',

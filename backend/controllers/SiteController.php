@@ -99,4 +99,16 @@ class SiteController extends Controller
         return $this->goHome();
 
     }
+
+        /**
+     * New disciples action.
+     *
+     * @return string
+     */
+    public function actionDisciple()
+    {
+
+        return $this->render('disciple');
+
+    }
 }

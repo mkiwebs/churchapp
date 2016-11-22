@@ -27,5 +27,7 @@ return [
     'Captcha' => '验证码',
     'Email' => '邮箱',
     'Inbox' => '收件箱',
+    'Church Name'=>'教会名称',
+    'Create Church'=>'添加教会',
     'Please fill out your email. A link to reset password will be sent there.' => '请填写您注册时使用的邮箱，将会发送一封邮件到您注册邮箱那里。',
 ];
