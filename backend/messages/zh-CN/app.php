@@ -105,13 +105,11 @@ return [
     'You\'re Following' => '我的关注',
     'Your Followers' => '我的粉丝',
 
-<<<<<<< HEAD
-
-=======
     
->>>>>>> bcc33fc5acdfec12c91ad48ba597ff5904ae4e1e
+    'Forum Description' => '论坛描述',
+    'Forum Url' => '论坛网址',
+    'Forum Icon' => '论坛图标',
     'Information' => '信息',
- 
     'Board' => '版块',
     'Board Name' => '版块名称',
     'Board Description' => '版块描述',
