@@ -23,7 +23,6 @@ return [
     'Log out' => '退出',
     'Sign up' => '注册',
     'Sign up now!' => '注册',
-    'Explore' => '探索',
     'Username' => '用户名',
     'Password' => '密码',
     'Captcha' => '验证码',
