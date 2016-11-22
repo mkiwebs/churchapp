@@ -29,6 +29,9 @@ return [
     'Captcha' => '验证码',
     'Email' => '邮箱',
     'Inbox' => '收件箱',
+    'Church Name'=>'教会名称',
+    'Create Church'=>'添加教会',
+
     'Notification' => '消息',
     'Sendto' => '收件人',
     'Subject' => '主题',
