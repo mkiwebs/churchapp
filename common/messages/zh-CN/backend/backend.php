@@ -88,7 +88,6 @@ return [
     'Answer' => '答案',
     'Public' => '公开',
     'With password' => '密码访问',
-    'With Q&A' => '问题访问',
     'Private' => '仅自己',
     'eg: My name?' => '例如：我的名字？',
     'eg: Jack' => '例如：张三',
