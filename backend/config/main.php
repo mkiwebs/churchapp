@@ -10,11 +10,49 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
-    'bootstrap' => ['log'],
+    //'bootstrap' => ['log'],
+   'bootstrap' => ['log',
+        [
+            'class' => 'common\components\LanguageSelector',
+            'supportedLanguages' => ['en-US', 'zh-CN'],
+        ]
+    ],
+    'modules' => [
+        'admin' => [
+                    'class' => 'mdm\admin\Module',
+                ],
 
-    'modules' => [],
+         'setting' => [
 
+                'class' => 'backend\modules\setting\Module',
+
+            ],
+        ],
     'components' => [
+
+
+/*'assetManager' => [
+    'bundles' => [
+        'yii\web\JqueryAsset' => [
+            'js'=>[]
+        ],
+        'yii\bootstrap\BootstrapPluginAsset' => [
+            'js'=>[]
+        ],
+        'yii\bootstrap\BootstrapAsset' => [
+            'css' => [],
+        ],
+
+    ],
+],
+*/
+'as access' => [
+        'class' => 'mdm\admin\components\AccessControl',
+        'allowActions' => [
+            'site/*',
+            'admin/*',
+        ],
+    ],
     'view'=>[
             'theme'=>[
             'pathMap'=>[

@@ -21,13 +21,14 @@ class DashboardAsset extends AssetBundle
     'adminlte/plugins/timepicker/bootstrap-timepicker.min.css',
     'adminlte/plugins/iCheck/flat/blue.css',
     'adminlte/plugins/daterangepicker/daterangepicker.css',
-      'adminlte/plugins/datepicker/datepicker3.css',
-      'adminlte/plugins/select2/select2.min.css',
-      'adminlte/plugins/morris/morris.css',
+    'adminlte/plugins/datepicker/datepicker3.css',
+
+/*      'adminlte/plugins/select2/select2.min.css',
+      'adminlte/plugins/morris/morris.css',*/
     ];
     public $js = [   
      'adminlte/bootstrap/js/bootstrap.min.js',
-     'adminlte/plugins/jQuery/jquery-2.2.3.min.js',
+     //'adminlte/plugins/jQuery/jquery-2.2.3.min.js',
       '//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',
       'adminlte/plugins/iCheck/icheck.min.js',
       //'adminlte/plugins/daterangepicker/daterangepicker.js',
@@ -39,9 +40,9 @@ class DashboardAsset extends AssetBundle
     //'adminlte/plugins/input-mask/jquery.inputmask.date.extensions.js',
    // 'adminlte/plugins/input-mask/jquery.inputmask.extensions.js',
     //'adminlte/plugins/input-mask/jquery.inputmask.js',
-    'adminlte/dist/js/app.min.js',
+    'adminlte/plugins/chartjs/Chart.min.js',
+    'adminlte/dist/js/app.js',
     'adminlte/plugins/fastclick/fastclick.js',
-    'adminlte/plugins/morris/morris.min.js',
 
       //'RGraph/libraries/RGraph.common.core.js',
       //'RGraph/libraries/RGraph.bar.js',

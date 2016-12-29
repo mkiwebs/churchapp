@@ -78,7 +78,7 @@ class Disciple extends \yii\db\ActiveRecord
             'disc_password' => Yii::t('backend', 'Password'),
             'disc_age' => Yii::t('backend', 'Age'),
             'disc_phone' => Yii::t('backend', 'Phone'),
-            'church_id' => Yii::t('backend', 'Church'),
+            'church_id' => Yii::t('backend', 'Church name'),
             'disc_ruhui_shijian' => Yii::t('backend', 'Join date'),
             'disc_gender' => Yii::t('backend', 'Gender'),
             'home_address' => Yii::t('backend', 'Home Address'),

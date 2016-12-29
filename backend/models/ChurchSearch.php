@@ -11,7 +11,8 @@ use backend\models\Church;
  * ChurchSearch represents the model behind the search form about `backend\models\Church`.
  */
 class ChurchSearch extends Church
-{
+{  
+    public $globalRoomSearch;
     /**
      * @inheritdoc
      */
@@ -19,7 +20,7 @@ class ChurchSearch extends Church
     {
         return [
             [['church_id', 'church_renshu'], 'integer'],
-            [['church_name', 'church_address', 'church_pastor', 'church_service_time', 'church_contact_info', 'church_vision', 'church_mission'], 'safe'],
+            [['church_name', 'church_address', 'globalRoomSearch','church_pastor', 'church_service_time', 'church_contact_info', 'church_vision', 'church_mission'], 'safe'],
         ];
     }
 
@@ -70,6 +71,13 @@ class ChurchSearch extends Church
             ->andFilterWhere(['like', 'church_contact_info', $this->church_contact_info])
             ->andFilterWhere(['like', 'church_vision', $this->church_vision])
             ->andFilterWhere(['like', 'church_mission', $this->church_mission]);
+
+                     //global search
+     $query->orFilterWhere(['like', 'church_name', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'church_address', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'church_pastor', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'church_contact_info', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'contact_phone', $this->globalRoomSearch]);   
 
         return $dataProvider;
     }

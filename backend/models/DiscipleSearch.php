@@ -11,7 +11,12 @@ use backend\models\Disciple;
  * DiscipleSearch represents the model behind the search form about `backend\models\Disciple`.
  */
 class DiscipleSearch extends Disciple
-{
+{  
+   /**
+     *@inheritdoc
+     *@property  $globalSearch
+     */
+    public $globalRoomSearch;
     /**
      * @inheritdoc
      */
@@ -19,7 +24,7 @@ class DiscipleSearch extends Disciple
     {
         return [
             [['disc_ID', 'disc_age', 'disc_type', 'disc_jieshaoren', 'disc_jianhuren', 'marriage_status', 'disc_gelou'], 'integer'],
-            [['full_name', 'id_number', 'disc_username', 'disc_password', 'disc_phone', 'disc_ruhui_shijian', 'disc_gender', 'home_address', 'disc_profile_photo_url', 'disc_email', 'disc_weixin', 'disc_zhouzhong', 'disc_jieshou_date', 'disc_zhiye', 'disc_jiedai_yuanyin', 'disc_jiedai_didian', 'disc_birthday', 'disc_tribe', 'disc_vision', 'disc_baptism_date', 'church_id', 'disc_work_place'], 'safe'],
+            [['full_name', 'id_number', 'globalRoomSearch','disc_username', 'disc_password', 'disc_phone', 'disc_ruhui_shijian', 'disc_gender', 'home_address', 'disc_profile_photo_url', 'disc_email', 'disc_weixin', 'disc_zhouzhong', 'disc_jieshou_date', 'disc_zhiye', 'disc_jiedai_yuanyin', 'disc_jiedai_didian', 'disc_birthday', 'disc_tribe', 'disc_vision', 'disc_baptism_date', 'church_id', 'disc_work_place'], 'safe'],
         ];
     }
 
@@ -58,11 +63,11 @@ class DiscipleSearch extends Disciple
         }
         //join the church model
         $query->joinWith('church');
+        
         // grid filtering conditions
         $query->andFilterWhere([
             'disc_ID' => $this->disc_ID,
             'disc_age' => $this->disc_age,
-            //'church_id' => $this->church_id,
             'disc_ruhui_shijian' => $this->disc_ruhui_shijian,
             'disc_jieshou_date' => $this->disc_jieshou_date,
             'disc_type' => $this->disc_type,
@@ -92,6 +97,13 @@ class DiscipleSearch extends Disciple
             ->andFilterWhere(['like', 'disc_vision', $this->disc_vision])
             ->andFilterWhere(['like', 'church_info.church_name', $this->church_id])
             ->andFilterWhere(['like', 'disc_work_place', $this->disc_work_place]);
+
+            //For @property $globalRoomSearch
+     $query->orFilterWhere(['like', 'full_name', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'disc_username', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'disc_phone', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'church_info.church_name', $this->globalRoomSearch])
+            ->orFilterWhere(['like', 'disc_email', $this->globalRoomSearch]); 
 
         return $dataProvider;
     }

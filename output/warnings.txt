@@ -1,0 +1,451 @@
+Array
+(
+    [0] => Array
+        (
+            [line] => 12
+            [file] => backend\assets\AppAsset.php
+            [message] => No docblock for element '$basePath'
+        )
+
+    [1] => Array
+        (
+            [line] => 12
+            [file] => backend\assets\AppAsset.php
+            [message] => No short description for element '$basePath'
+        )
+
+    [2] => Array
+        (
+            [line] => 13
+            [file] => backend\assets\AppAsset.php
+            [message] => No docblock for element '$baseUrl'
+        )
+
+    [3] => Array
+        (
+            [line] => 13
+            [file] => backend\assets\AppAsset.php
+            [message] => No short description for element '$baseUrl'
+        )
+
+    [4] => Array
+        (
+            [line] => 14
+            [file] => backend\assets\AppAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [5] => Array
+        (
+            [line] => 14
+            [file] => backend\assets\AppAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [6] => Array
+        (
+            [line] => 17
+            [file] => backend\assets\AppAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [7] => Array
+        (
+            [line] => 17
+            [file] => backend\assets\AppAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [8] => Array
+        (
+            [line] => 19
+            [file] => backend\assets\AppAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [9] => Array
+        (
+            [line] => 19
+            [file] => backend\assets\AppAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [10] => Array
+        (
+            [line] => 14
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [11] => Array
+        (
+            [line] => 14
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [12] => Array
+        (
+            [line] => 15
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [13] => Array
+        (
+            [line] => 15
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [14] => Array
+        (
+            [line] => 28
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [15] => Array
+        (
+            [line] => 28
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [16] => Array
+        (
+            [line] => 50
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [17] => Array
+        (
+            [line] => 50
+            [file] => backend\assets\DashboardAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [18] => Array
+        (
+            [line] => 14
+            [file] => backend\assets\LoginAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [19] => Array
+        (
+            [line] => 14
+            [file] => backend\assets\LoginAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [20] => Array
+        (
+            [line] => 15
+            [file] => backend\assets\LoginAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [21] => Array
+        (
+            [line] => 15
+            [file] => backend\assets\LoginAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [22] => Array
+        (
+            [line] => 23
+            [file] => backend\assets\LoginAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [23] => Array
+        (
+            [line] => 23
+            [file] => backend\assets\LoginAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [24] => Array
+        (
+            [line] => 30
+            [file] => backend\assets\LoginAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [25] => Array
+        (
+            [line] => 30
+            [file] => backend\assets\LoginAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [26] => Array
+        (
+            [line] => 5
+            [file] => backend\controllers\CommunityController.php
+            [message] => No docblock for element 'backend\controllers\CommunityController'
+        )
+
+    [27] => Array
+        (
+            [line] => 7
+            [file] => backend\controllers\CommunityController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [28] => Array
+        (
+            [line] => 9
+            [file] => backend\controllers\CommunityController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [29] => Array
+        (
+            [line] => 5
+            [file] => backend\controllers\DeaconsController.php
+            [message] => No docblock for element 'backend\controllers\DeaconsController'
+        )
+
+    [30] => Array
+        (
+            [line] => 7
+            [file] => backend\controllers\DeaconsController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [31] => Array
+        (
+            [line] => 9
+            [file] => backend\controllers\DeaconsController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [32] => Array
+        (
+            [line] => 5
+            [file] => backend\controllers\GeneralController.php
+            [message] => No docblock for element 'backend\controllers\GeneralController'
+        )
+
+    [33] => Array
+        (
+            [line] => 7
+            [file] => backend\controllers\GeneralController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [34] => Array
+        (
+            [line] => 9
+            [file] => backend\controllers\GeneralController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [35] => Array
+        (
+            [line] => 5
+            [file] => backend\controllers\SettingsController.php
+            [message] => No docblock for element 'backend\controllers\SettingsController'
+        )
+
+    [36] => Array
+        (
+            [line] => 7
+            [file] => backend\controllers\SettingsController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [37] => Array
+        (
+            [line] => 12
+            [file] => backend\controllers\SettingsController.php
+            [message] => No docblock for element 'actionUpdate'
+        )
+
+    [38] => Array
+        (
+            [line] => 9
+            [file] => backend\controllers\SettingsController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [39] => Array
+        (
+            [line] => 14
+            [file] => backend\controllers\SettingsController.php
+            [message] => No docblock for element 'actionUpdate'
+        )
+
+    [40] => Array
+        (
+            [line] => 5
+            [file] => backend\controllers\TrainingController.php
+            [message] => No docblock for element 'backend\controllers\TrainingController'
+        )
+
+    [41] => Array
+        (
+            [line] => 7
+            [file] => backend\controllers\TrainingController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [42] => Array
+        (
+            [line] => 9
+            [file] => backend\controllers\TrainingController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [43] => Array
+        (
+            [line] => 106
+            [file] => backend\models\Disciple.php
+            [message] => No docblock for element 'getChurch'
+        )
+
+    [44] => Array
+        (
+            [line] => 60
+            [file] => backend\models\Midweek.php
+            [message] => No docblock for element 'getChurch'
+        )
+
+    [45] => Array
+        (
+            [line] => 66
+            [file] => backend\models\Officials.php
+            [message] => No docblock for element 'getDisciple'
+        )
+
+    [46] => Array
+        (
+            [line] => 60
+            [file] => backend\models\Property.php
+            [message] => No docblock for element 'getDisciple'
+        )
+
+    [47] => Array
+        (
+            [line] => 23
+            [file] => backend\models\Service.php
+            [message] => No docblock for element '$serviceAttendance'
+        )
+
+    [48] => Array
+        (
+            [line] => 23
+            [file] => backend\models\Service.php
+            [message] => No short description for element '$serviceAttendance'
+        )
+
+    [49] => Array
+        (
+            [line] => 28
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'tableName'
+        )
+
+    [50] => Array
+        (
+            [line] => 64
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'getChurch'
+        )
+
+    [51] => Array
+        (
+            [line] => 69
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'countYouth'
+        )
+
+    [52] => Array
+        (
+            [line] => 23
+            [file] => backend\models\Service.php
+            [message] => No docblock for element '$serviceAttendance'
+        )
+
+    [53] => Array
+        (
+            [line] => 23
+            [file] => backend\models\Service.php
+            [message] => No short description for element '$serviceAttendance'
+        )
+
+    [54] => Array
+        (
+            [line] => 24
+            [file] => backend\models\Service.php
+            [message] => No docblock for element '$data_series'
+        )
+
+    [55] => Array
+        (
+            [line] => 24
+            [file] => backend\models\Service.php
+            [message] => No short description for element '$data_series'
+        )
+
+    [56] => Array
+        (
+            [line] => 25
+            [file] => backend\models\Service.php
+            [message] => No docblock for element '$newDisciples'
+        )
+
+    [57] => Array
+        (
+            [line] => 25
+            [file] => backend\models\Service.php
+            [message] => No short description for element '$newDisciples'
+        )
+
+    [58] => Array
+        (
+            [line] => 30
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'tableName'
+        )
+
+    [59] => Array
+        (
+            [line] => 66
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'getChurch'
+        )
+
+    [60] => Array
+        (
+            [line] => 71
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'countYouth'
+        )
+
+    [61] => Array
+        (
+            [line] => 76
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'countAttendance'
+        )
+
+    [62] => Array
+        (
+            [line] => 81
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'newDisciples'
+        )
+
+    [63] => Array
+        (
+            [line] => 87
+            [file] => backend\models\Service.php
+            [message] => No docblock for element 'midweekService'
+        )
+
+)

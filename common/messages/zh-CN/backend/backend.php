@@ -17,6 +17,7 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+'Date'=>'日期',
     'Home' => '首页',
     'Log in' => '登录',
     'Log out' => '退出',

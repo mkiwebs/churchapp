@@ -1,0 +1,367 @@
+Array
+(
+    [0] => Array
+        (
+            [line] => 20
+            [file] => backend\controllers\ChurchController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\ChurchController.
+        )
+
+    [1] => Array
+        (
+            [line] => 20
+            [file] => backend\controllers\DiscipleController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\DiscipleController.
+        )
+
+    [2] => Array
+        (
+            [line] => 20
+            [file] => backend\controllers\MidweekController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\MidweekController.
+        )
+
+    [3] => Array
+        (
+            [line] => 20
+            [file] => backend\controllers\OfficialsController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\OfficialsController.
+        )
+
+    [4] => Array
+        (
+            [line] => 20
+            [file] => backend\controllers\PropertyController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\PropertyController.
+        )
+
+    [5] => Array
+        (
+            [line] => 20
+            [file] => backend\controllers\ServiceController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\ServiceController.
+        )
+
+    [6] => Array
+        (
+            [line] => 18
+            [file] => backend\controllers\SiteController.php
+            [message] => Method behaviors has no parent to inherit from in backend\controllers\SiteController.
+        )
+
+    [7] => Array
+        (
+            [line] => 49
+            [file] => backend\controllers\SiteController.php
+            [message] => Method actions has no parent to inherit from in backend\controllers\SiteController.
+        )
+
+    [8] => Array
+        (
+            [line] => 25
+            [file] => backend\models\Church.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Church.
+        )
+
+    [9] => Array
+        (
+            [line] => 33
+            [file] => backend\models\Church.php
+            [message] => Method rules has no parent to inherit from in backend\models\Church.
+        )
+
+    [10] => Array
+        (
+            [line] => 47
+            [file] => backend\models\Church.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Church.
+        )
+
+    [11] => Array
+        (
+            [line] => 25
+            [file] => backend\models\Church.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Church.
+        )
+
+    [12] => Array
+        (
+            [line] => 33
+            [file] => backend\models\Church.php
+            [message] => Method rules has no parent to inherit from in backend\models\Church.
+        )
+
+    [13] => Array
+        (
+            [line] => 47
+            [file] => backend\models\Church.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Church.
+        )
+
+    [14] => Array
+        (
+            [line] => 29
+            [file] => backend\models\ChurchSearch.php
+            [message] => Method scenarios has no parent to inherit from in backend\models\ChurchSearch.
+        )
+
+    [15] => Array
+        (
+            [line] => 45
+            [file] => backend\models\Disciple.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Disciple.
+        )
+
+    [16] => Array
+        (
+            [line] => 53
+            [file] => backend\models\Disciple.php
+            [message] => Method rules has no parent to inherit from in backend\models\Disciple.
+        )
+
+    [17] => Array
+        (
+            [line] => 71
+            [file] => backend\models\Disciple.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Disciple.
+        )
+
+    [18] => Array
+        (
+            [line] => 45
+            [file] => backend\models\Disciple.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Disciple.
+        )
+
+    [19] => Array
+        (
+            [line] => 53
+            [file] => backend\models\Disciple.php
+            [message] => Method rules has no parent to inherit from in backend\models\Disciple.
+        )
+
+    [20] => Array
+        (
+            [line] => 71
+            [file] => backend\models\Disciple.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Disciple.
+        )
+
+    [21] => Array
+        (
+            [line] => 29
+            [file] => backend\models\DiscipleSearch.php
+            [message] => Method scenarios has no parent to inherit from in backend\models\DiscipleSearch.
+        )
+
+    [22] => Array
+        (
+            [line] => 25
+            [file] => backend\models\Midweek.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Midweek.
+        )
+
+    [23] => Array
+        (
+            [line] => 33
+            [file] => backend\models\Midweek.php
+            [message] => Method rules has no parent to inherit from in backend\models\Midweek.
+        )
+
+    [24] => Array
+        (
+            [line] => 45
+            [file] => backend\models\Midweek.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Midweek.
+        )
+
+    [25] => Array
+        (
+            [line] => 25
+            [file] => backend\models\Midweek.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Midweek.
+        )
+
+    [26] => Array
+        (
+            [line] => 33
+            [file] => backend\models\Midweek.php
+            [message] => Method rules has no parent to inherit from in backend\models\Midweek.
+        )
+
+    [27] => Array
+        (
+            [line] => 45
+            [file] => backend\models\Midweek.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Midweek.
+        )
+
+    [28] => Array
+        (
+            [line] => 29
+            [file] => backend\models\MidweekSearch.php
+            [message] => Method scenarios has no parent to inherit from in backend\models\MidweekSearch.
+        )
+
+    [29] => Array
+        (
+            [line] => 27
+            [file] => backend\models\Officials.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Officials.
+        )
+
+    [30] => Array
+        (
+            [line] => 35
+            [file] => backend\models\Officials.php
+            [message] => Method rules has no parent to inherit from in backend\models\Officials.
+        )
+
+    [31] => Array
+        (
+            [line] => 48
+            [file] => backend\models\Officials.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Officials.
+        )
+
+    [32] => Array
+        (
+            [line] => 27
+            [file] => backend\models\Officials.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Officials.
+        )
+
+    [33] => Array
+        (
+            [line] => 35
+            [file] => backend\models\Officials.php
+            [message] => Method rules has no parent to inherit from in backend\models\Officials.
+        )
+
+    [34] => Array
+        (
+            [line] => 48
+            [file] => backend\models\Officials.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Officials.
+        )
+
+    [35] => Array
+        (
+            [line] => 29
+            [file] => backend\models\OfficialsSearch.php
+            [message] => Method scenarios has no parent to inherit from in backend\models\OfficialsSearch.
+        )
+
+    [36] => Array
+        (
+            [line] => 24
+            [file] => backend\models\Property.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Property.
+        )
+
+    [37] => Array
+        (
+            [line] => 32
+            [file] => backend\models\Property.php
+            [message] => Method rules has no parent to inherit from in backend\models\Property.
+        )
+
+    [38] => Array
+        (
+            [line] => 46
+            [file] => backend\models\Property.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Property.
+        )
+
+    [39] => Array
+        (
+            [line] => 24
+            [file] => backend\models\Property.php
+            [message] => Method tableName has no parent to inherit from in backend\models\Property.
+        )
+
+    [40] => Array
+        (
+            [line] => 32
+            [file] => backend\models\Property.php
+            [message] => Method rules has no parent to inherit from in backend\models\Property.
+        )
+
+    [41] => Array
+        (
+            [line] => 46
+            [file] => backend\models\Property.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Property.
+        )
+
+    [42] => Array
+        (
+            [line] => 30
+            [file] => backend\models\PropertySearch.php
+            [message] => Method scenarios has no parent to inherit from in backend\models\PropertySearch.
+        )
+
+    [43] => Array
+        (
+            [line] => 38
+            [file] => backend\models\Service.php
+            [message] => Method rules has no parent to inherit from in backend\models\Service.
+        )
+
+    [44] => Array
+        (
+            [line] => 50
+            [file] => backend\models\Service.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Service.
+        )
+
+    [45] => Array
+        (
+            [line] => 96
+            [file] => backend\models\Service.php
+            [message] => Method getMonth has no parent to inherit from in backend\models\Service.
+        )
+
+    [46] => Array
+        (
+            [line] => 104
+            [file] => backend\models\Service.php
+            [message] => Method getData has no parent to inherit from in backend\models\Service.
+        )
+
+    [47] => Array
+        (
+            [line] => 38
+            [file] => backend\models\Service.php
+            [message] => Method rules has no parent to inherit from in backend\models\Service.
+        )
+
+    [48] => Array
+        (
+            [line] => 50
+            [file] => backend\models\Service.php
+            [message] => Method attributeLabels has no parent to inherit from in backend\models\Service.
+        )
+
+    [49] => Array
+        (
+            [line] => 96
+            [file] => backend\models\Service.php
+            [message] => Method getMonth has no parent to inherit from in backend\models\Service.
+        )
+
+    [50] => Array
+        (
+            [line] => 104
+            [file] => backend\models\Service.php
+            [message] => Method getData has no parent to inherit from in backend\models\Service.
+        )
+
+    [51] => Array
+        (
+            [line] => 29
+            [file] => backend\models\ServiceSearch.php
+            [message] => Method scenarios has no parent to inherit from in backend\models\ServiceSearch.
+        )
+
+)

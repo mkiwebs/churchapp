@@ -1,20 +1,25 @@
 <?php
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+ 
+    
     //set target language to chinese
      'language'=>'zh-CN',
     //'language'=>'en', // back to English
 
     'name'=>'Churchapp',
     'timeZone'=>'Asia/Shanghai',
-    'aliases'=>[
+   /* 'aliases'=>[
 
         '@customIcons'=>'@backend/web/uploads/customIcons/',
         '@profilePics'=>'@backend/web/uploads/profilePics/',
         '@videos'=>'@backend/web/uploads/videos/',
         '@fileDocs'=>'@backend/web/uploads/fileDocs/',
-    ],
+    ],*/
     'components' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
 
         //TRANSLATION SETTINGS
     'i18n' => [
