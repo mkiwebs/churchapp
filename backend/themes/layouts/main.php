@@ -9,8 +9,16 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
+use yii\helpers\Url;
 
 DashboardAsset::register($this);
+$this->registerCss(" small {
+    display: inline;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+}
+");
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -27,11 +35,13 @@ DashboardAsset::register($this);
 <div class="wrapper">
       <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+
+
+    <a href="index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>R</b>T</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>Rem</b>nant</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -42,44 +52,22 @@ DashboardAsset::register($this);
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-        
-          <!-- Messages: style can be found in dropdown.less-->
-
-
           <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
+              <p class="inline"><?php
+            echo Html::a('中文', Url::current(['language' => 'zh-CN']),
+              ['style' => 'padding-right:10px;color:white;'])." ";
+            echo Html::a('English', Url::current(['language' => 'en-US']),
+              ['style' => 'padding-right:10px;color:white;']);
+            ?></p>
           </li>
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-          </li>
-          <!-- Tasks: style can be found in dropdown.less -->
-          <li class="dropdown tasks-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
 
-              </li>
-            </ul>
-          </li>
           <!-- User Account: style can be found in dropdown.less -->
         <li class="">
                
             <?= Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
                 'Logout',
-                ['class' => 'btn bg-orange btn-flat']
+                ['class' => 'inline btn bg-orange btn-flat']
             )
             . Html::endForm() ?>
             </li>
@@ -108,55 +96,100 @@ DashboardAsset::register($this);
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <a href="index.php">
+            <i class="fa fa-dashboard"></i>
+            <span><?= Yii::t('backend', 'Dashboard')?> </span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
         </li>
 
         <li class="treeview">
           <a href="#">
             <i class="fa fa-bar-chart"></i>
-            <span>Statistics</span>
+            <span><?= Yii::t('backend', 'Statistics')?></span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
 
-            <li><?= Html::a(' General', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Deacons', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Community', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Training', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Local Church'), ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?>
+               <li>
+           <a href="#">
+            <i class="fa fa-circle-o"></i>
+            <span><?= Yii::t('backend', 'Church Data')?></span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+          <ul class="treeview-menu">
+            <li><?= Html::a(Yii::t('backend', 'Sunday Service'), ['/service/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Midweek'), ['/midweek/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Deacons'), ['/site/workers'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' University'), ['/site/universitydata'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' New Disciples'), ['/site/newdiscipledata'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Camp'), ['/site/campdata'], ['class' => 'fa fa-circle-o']) ?></li>
+          </ul>
+          </li>
+
+
+
+            </li>
+            <li><?= Html::a(Yii::t('backend', ' University'), ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' RT Mission'), ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Business Mission'), ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
 
         <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-plus"></i> <span>Church Info</span>
+           <a href="#">
+            <i class="fa fa-cogs"></i>
+            <span><?= Yii::t('backend', 'Church Info')?></span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
-          </a>
+            </a>
           <ul class="treeview-menu">
-            <li><?= Html::a(' General', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Deacons', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Community', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
-            <li><?= Html::a(' Training', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' General'), ['/church/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Officials'), ['/officials/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Deacons'), ['/deacons/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Community'), ['/community/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Training'), ['/training/index'], ['class' => 'fa fa-circle-o']) ?></li>
+             <li><?= Html::a(Yii::t('backend', ' Property'), ['/property/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
 
         <li class="treeview">
           <a href="#">
             <i class="fa fa-cogs"></i>
-            <span>Settings</span>
+            <span><?= Yii::t('backend', 'Settings')?></span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Language</a></li>
-            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i>Modules</a></li>
-            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Components</a></li>
+            <li><?= Html::a(Yii::t('backend', ' Property'), ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Modules', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Components', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+                           <li>
+           <a href="#">
+            <i class="fa fa-circle-o"></i>
+            <span><?= Yii::t('backend', 'Access Control')?></span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+          <ul class="treeview-menu">
+            <li><?= Html::a(Yii::t('backend', 'User'), ['/admin/user'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Roles'), ['/admin/role'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Permission'), ['/admin/permission'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Menu'), ['/admin/menu'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Route'), ['/admin/route'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(Yii::t('backend', ' Admins'), ['/site/campdata'], ['class' => 'fa fa-circle-o']) ?></li>
+          </ul>
+          </li>
           </ul>
         </li>
         <li class="treeview">
@@ -168,10 +201,11 @@ DashboardAsset::register($this);
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Deacons</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Community</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> New Disciples</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Experts</a></li>
+            <li><?= Html::a(' Disciples', ['/disciple/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Deacons', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Community', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' New Disciples', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
+            <li><?= Html::a(' Experts', ['/storekeeping/index'], ['class' => 'fa fa-circle-o']) ?></li>
           </ul>
         </li>
 
@@ -181,17 +215,21 @@ DashboardAsset::register($this);
     </section>
     <!-- /.sidebar -->
   </aside>
-
     <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <p class="lead">
+      <p class="clock  inline">
         Dashboard
-        <small><?php echo date("Y/ m /j");?></small>
-      </p>
+             <small id="Date"></small>
+             <small id="hours"> </small>
+             <small id="point">: </small> 
+             <small id="min"> </small>
+             <small id="point">: </small>
+             <small id="sec"> </small>
          <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+            //'class'=>' inline',
+        ]) ?></p>
         <?= Alert::widget() ?>
     </section>
     <section class="content">
@@ -211,5 +249,45 @@ DashboardAsset::register($this);
 
 <?php $this->endBody() ?>
 </body>
+<?php $this->registerJsFile(
+  'http://code.jquery.com/jquery-1.6.4.min.js',
+  ['depends' => [\yii\web\JqueryAsset::className()]]);
+?>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script> -->
+<script type="text/javascript">
+$(document).ready(function() {
+// Create two variable with the names of the months and days in an array
+var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; 
+var dayNames= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+
+// Create a newDate() object
+var newDate = new Date();
+// Extract the current date from Date object
+newDate.setDate(newDate.getDate());
+// Output the day, date, month and year   
+$('#Date').html(dayNames[newDate.getDay()] + " " + newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+setInterval( function() {
+  // Create a newDate() object and extract the seconds of the current time on the visitor's
+  var seconds = new Date().getSeconds();
+  // Add a leading zero to seconds value
+  $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+  },1000);
+  
+setInterval( function() {
+  // Create a newDate() object and extract the minutes of the current time on the visitor's
+  var minutes = new Date().getMinutes();
+  // Add a leading zero to the minutes value
+  $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+    },1000);
+  
+setInterval( function() {
+  // Create a newDate() object and extract the hours of the current time on the visitor's
+  var hours = new Date().getHours();
+  // Add a leading zero to the hours value
+  $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+    }, 1000); 
+});
+</script>
 </html>
 <?php $this->endPage() ?>
