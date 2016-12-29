@@ -8,6 +8,10 @@ $this->title = 'My Yii Application';
 
    <div class="container">
 
+    <div class="jumbotron">
+        <h1>Congratulations!</h1>
+
+
         <div class="row">
 
             <!-- Blog Entries Column -->
